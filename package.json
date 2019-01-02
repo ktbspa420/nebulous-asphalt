@@ -10,10 +10,13 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "gulp": "^3.x",
+    "semantic-ui": "^2.4.2",
+    "pnpm": "^2.23.1"
   },
   "engines": {
-    "node": "8.x"
+    "node": "10.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
