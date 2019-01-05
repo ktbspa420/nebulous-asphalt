@@ -230,6 +230,78 @@
     </div>
   </div>
   
+  <div class="ui stacked segment">
+    
+
+<div class="ui teal indicating progress" id="progress">
+  <div class="bar"></div>
+  <div class="label">Progress</div>
+
+</div>
+    <button class="ui small basic green button" id="increment">
+    +
+  </button>
+  <button class="ui small basic red button" id="decrement">
+    -
+  </button>
+    </div>
+  
+  
+  <div class="ui styled accordion">
+  <div class="active title">
+    <i class="dropdown icon"></i>
+    Bob Ross Ipsum
+  </div>
+  <div class="content">
+    <p>Clouds are free. They just float around the sky all day and have fun. Get away from those little Christmas tree things we used to make in school. We'll put a happy little sky in here.</p>
+
+    <p>Use your imagination, let it go. Don't hurry. Take your time and enjoy. There we go. Sometimes you learn more from your mistakes than you do from your masterpieces.</p>
+
+    <p>In nature, dead trees are just as normal as live trees. If there's two big trees invariably sooner or later there's gonna be a little tree. Only God can make a tree - but you can paint one. Just make little strokes like that. Isn't that fantastic that you can make whole mountains in minutes? Just let this happen. We just let this flow right out of our minds.</p>
+
+    <p>Let's put some happy little clouds in our world. If we're gonna walk though the woods, we need a little path. I started painting as a hobby when I was little. I didn't know I had any talent. I believe talent is just a pursued interest. Anybody can do what I do.</p>
+
+    <p>It's all a game of angles. No pressure. Just relax and watch it happen. In your world you have total and absolute power.</p>
+
+    <p>Happy painting, God bless. By now you should be quite happy about what's happening here. Let your heart be your guide.</p>
+
+    <p>Talent is a pursued interest. That is to say, anything you practice you can do. A thin paint will stick to a thick paint. Remember how free clouds are. They just lay around in the sky all day long. You are only limited by your imagination. Let that brush dance around there and play. I'm sort of a softy, I couldn't shoot Bambi except with a camera.</p>
+
+  </div>
+  <div class="title">
+    <i class="dropdown icon"></i>
+    Bacon Ipsum
+  </div>
+  <div class="content">
+    <p>
+      
+    Spicy jalapeno bacon ipsum dolor amet alcatra sirloin filet mignon, pancetta venison corned beef swine ground round meatloaf strip steak spare ribs t-bone hamburger picanha sausage. Pork chop meatball andouille tail jowl. Bacon sausage frankfurter filet mignon kevin, cow tail pig rump beef chuck brisket. Doner ball tip jowl, hamburger kevin ground round chuck. Frankfurter andouille biltong pastrami chicken boudin cow ball tip.
+</p><p>
+    
+    
+Bresaola ball tip doner meatloaf chicken strip steak. Meatloaf shoulder fatback cow. Shankle cow tongue leberkas. Burgdoggen meatball picanha jerky salami cupim. Venison chuck tongue, short loin tail chicken pork chop t-bone landjaeger. Corned beef salami doner, turducken beef ribs spare ribs buffalo alcatra cupim pork ham pork belly burgdoggen pastrami. Landjaeger tenderloin salami capicola sausage ground round.
+</p><p>
+    
+    
+Ham pork belly filet mignon capicola shank shoulder t-bone ribeye prosciutto biltong sirloin turducken tri-tip cupim. Short ribs pork loin sausage, t-bone venison salami prosciutto tri-tip porchetta shoulder ground round kielbasa jerky. Salami jowl chicken corned beef shank rump. Pastrami turducken hamburger ribeye, pancetta bresaola tongue tail chicken pork loin corned beef picanha andouille flank. Ground round brisket pancetta shoulder cow corned beef, pork chop alcatra boudin meatloaf.
+</p><p>
+    
+    
+Flank buffalo cupim, chicken cow leberkas ham turkey. Pork chop spare ribs fatback pork loin ham capicola meatloaf swine pancetta. Cupim strip steak flank, porchetta chicken ham hock tail bacon pork chop doner. Venison ground round doner hamburger. Beef ribs fatback tail, pancetta andouille pork belly shankle doner brisket t-bone pork loin flank. Ham hock pancetta alcatra tail sausage drumstick pastrami corned beef landjaeger swine beef doner hamburger bresaola.
+</p><p>
+    
+    
+Ball tip short loin swine jowl sausage cupim fatback boudin flank leberkas tri-tip. Short ribs tenderloin cupim sirloin. Pork chop pastrami ground round chicken. Prosciutto boudin pancetta shoulder doner pork belly tongue. Ham pork chop kevin prosciutto, tail turducken alcatra shankle corned beef drumstick bresaola short loin.
+ </p> </div>
+  <div class="title">
+    <i class="dropdown icon"></i>
+    Office Ipsum
+  </div>
+  <div class="content">
+    <p>Race without a finish line drive awareness to increase engagement on your plate bleeding edge. Prairie dogging drink the Kool-aid Bob called an all-hands this afternoon, for marketing computer development html roi feedback team website peel the onion upstream selling. Accountable talk. Q1 it just needs more cowbell knowledge is power. We need to leverage our synergies that ipo will be a game-changer and cross-pollination, or thought shower, nor we need to dialog around your choice of work attire organic growth win-win-win. Old boys club moving the goalposts, nor Q1 can you ballpark the cost per unit for me. </p>
+    
+  </div>
+</div>
   
   <h4 id="3" class="ui top attached block header">
     
@@ -268,6 +340,14 @@
       <a class="item">GitHub</a>
       <a class="item">Instagram</a>
     </div>
-
+    <script>
+      $('.ui.accordion')
+        .accordion();
+    
+      let $progress = $('#progress');
+      $progress.progress();
+      $('#increment').click(function() {$progress.progress('increment');});
+      $('#decrement').click(function() {$progress.progress('decrement');});
+    </script>
   </body>
 </html>
